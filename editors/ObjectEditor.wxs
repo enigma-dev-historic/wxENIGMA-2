@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wxsmith>
+	<object class="wxPanel" name="ObjectEditor">
+		<id_arg>0</id_arg>
+		<object class="wxBoxSizer" variable="rootSizer" member="no">
+			<object class="sizeritem">
+				<object class="wxBoxSizer" variable="propertiesSizer" member="no">
+					<orient>wxVERTICAL</orient>
+					<object class="sizeritem">
+						<object class="wxBoxSizer" variable="nameSizer" member="no">
+							<object class="sizeritem">
+								<object class="wxStaticText" name="ID_STATICTEXT1" variable="nameLabel" member="yes">
+									<label>Name</label>
+								</object>
+								<flag>wxTOP|wxBOTTOM|wxLEFT|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+								<border>5</border>
+							</object>
+							<object class="sizeritem">
+								<object class="wxTextCtrl" name="ID_TEXTCTRL1" variable="nameTextCtrl" member="yes">
+									<value>obj__0</value>
+								</object>
+								<flag>wxALL</flag>
+								<border>5</border>
+								<option>1</option>
+							</object>
+						</object>
+						<flag>wxALL|wxEXPAND</flag>
+					</object>
+					<object class="sizeritem">
+						<object class="wxGridSizer" variable="propertiesGridSizer" member="no">
+							<cols>2</cols>
+							<rows>2</rows>
+							<vgap>5</vgap>
+							<hgap>5</hgap>
+							<object class="sizeritem">
+								<object class="wxCheckBox" name="ID_VISIBLECHECKBOX" variable="visibleCheckBox" member="yes">
+									<label>Visible</label>
+								</object>
+								<flag>wxALL|wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL</flag>
+								<option>1</option>
+							</object>
+							<object class="sizeritem">
+								<object class="wxCheckBox" name="ID_CHECKBOX2" variable="solidCheckBox" member="yes">
+									<label>Solid</label>
+								</object>
+								<flag>wxALL|wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL</flag>
+								<option>1</option>
+							</object>
+							<object class="sizeritem">
+								<object class="wxCheckBox" name="ID_CHECKBOX3" variable="persistentCheckBox" member="yes">
+									<label>Persistent</label>
+								</object>
+								<flag>wxALL|wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL</flag>
+								<option>1</option>
+							</object>
+							<object class="sizeritem">
+								<object class="wxCheckBox" name="ID_CHECKBOX4" variable="usePhysicsCheckBox" member="yes">
+									<label>Use Physics</label>
+								</object>
+								<flag>wxALL|wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL</flag>
+								<option>1</option>
+							</object>
+						</object>
+						<flag>wxLEFT|wxRIGHT|wxALIGN_LEFT</flag>
+						<border>5</border>
+					</object>
+				</object>
+				<flag>wxBOTTOM</flag>
+				<border>5</border>
+			</object>
+			<object class="sizeritem">
+				<object class="wxBoxSizer" variable="eventListSizer" member="no">
+					<orient>wxVERTICAL</orient>
+					<object class="sizeritem">
+						<object class="wxListBox" name="ID_LISTBOX1" variable="eventList" member="yes">
+							<content>
+								<item>Create</item>
+								<item>Step</item>
+								<item>Draw</item>
+							</content>
+							<default>-1</default>
+							<size>195,249</size>
+						</object>
+						<flag>wxALL|wxEXPAND</flag>
+						<option>1</option>
+					</object>
+					<object class="sizeritem">
+						<object class="wxBoxSizer" variable="eventListButtonsSizer" member="no">
+							<object class="sizeritem">
+								<object class="wxBitmapButton" name="ID_BITMAPBUTTON1" variable="addEventButton" member="yes">
+									<bitmap>Calico\actions\add.png</bitmap>
+									<handler function="OnBitmapButton1Click" entry="EVT_BUTTON" />
+								</object>
+								<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+							</object>
+							<object class="sizeritem">
+								<object class="wxBitmapButton" name="ID_BITMAPBUTTON6" variable="deleteEventButton" member="yes">
+									<bitmap>Calico\actions\delete.png</bitmap>
+								</object>
+								<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+							</object>
+							<object class="sizeritem">
+								<object class="wxBitmapButton" name="ID_BITMAPBUTTON2" variable="editEventButton" member="yes">
+									<bitmap>Calico\actions\edit.png</bitmap>
+								</object>
+								<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+							</object>
+							<object class="sizeritem">
+								<object class="wxBitmapButton" name="ID_BITMAPBUTTON3" variable="cutEventButton" member="yes">
+									<bitmap>Calico\actions\cut.png</bitmap>
+								</object>
+								<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+							</object>
+							<object class="sizeritem">
+								<object class="wxBitmapButton" name="ID_BITMAPBUTTON4" variable="copyEventButton" member="yes">
+									<bitmap>Calico\actions\copy.png</bitmap>
+								</object>
+								<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+							</object>
+							<object class="sizeritem">
+								<object class="wxBitmapButton" name="ID_BITMAPBUTTON5" variable="pasteEventButton" member="yes">
+									<bitmap>Calico\actions\paste.png</bitmap>
+								</object>
+								<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+							</object>
+						</object>
+						<flag>wxALL|wxALIGN_CENTER_HORIZONTAL</flag>
+						<border>5</border>
+					</object>
+				</object>
+				<flag>wxTOP|wxEXPAND</flag>
+				<border>5</border>
+				<option>1</option>
+			</object>
+			<object class="sizeritem">
+				<object class="wxBoxSizer" variable="actionListSizer" member="no">
+					<object class="sizeritem">
+						<object class="wxTreeCtrl" name="ID_TREECTRL1" variable="actionTreeCtrl" member="yes">
+							<image_list>&lt;none&gt;</image_list>
+							<tree_items>
+								<item>actionTreeCtrl</item>
+								<item>&lt;none&gt;</item>
+								<item>0,#000000,0,-1,-1,-1,-1,root</item>
+								<item>1,#000000,0,-1,-1,-1,-1,item 1</item>
+								<item>1,#000000,0,-1,-1,-1,-1,item 2</item>
+								<item>1,#000000,0,-1,-1,-1,-1,item 3</item>
+								<item>1,#000000,0,-1,-1,-1,-1,item 4</item>
+								<item>1,#000000,0,-1,-1,-1,-1,item 5</item>
+								<item>1,#000000,0,-1,-1,-1,-1,item 6</item>
+								<item>1,#000000,0,-1,-1,-1,-1,item 7</item>
+								<item>1,#000000,0,-1,-1,-1,-1,item 8</item>
+								<item>1,#000000,0,-1,-1,-1,-1,item 9</item>
+							</tree_items>
+							<items_text>
+								<item2>actionTreeCtrl</item2>
+								<item2>&lt;none&gt;</item2>
+								<item2>0,#000000,0,-1,-1,-1,-1,root</item2>
+								<item2>1,#000000,0,-1,-1,-1,-1,item 1</item2>
+								<item2>1,#000000,0,-1,-1,-1,-1,item 2</item2>
+								<item2>1,#000000,0,-1,-1,-1,-1,item 3</item2>
+								<item2>1,#000000,0,-1,-1,-1,-1,item 4</item2>
+								<item2>1,#000000,0,-1,-1,-1,-1,item 5</item2>
+								<item2>1,#000000,0,-1,-1,-1,-1,item 6</item2>
+								<item2>1,#000000,0,-1,-1,-1,-1,item 7</item2>
+								<item2>1,#000000,0,-1,-1,-1,-1,item 8</item2>
+								<item2>1,#000000,0,-1,-1,-1,-1,item 9</item2>
+							</items_text>
+							<size>238,318</size>
+						</object>
+						<flag>wxALL|wxEXPAND</flag>
+						<option>1</option>
+					</object>
+				</object>
+				<flag>wxALL|wxEXPAND</flag>
+				<border>5</border>
+				<option>1</option>
+			</object>
+		</object>
+		<object class="wxMenu" variable="eventsMenu" member="yes">
+			<object class="wxMenuItem" name="ID_MENUITEM1" variable="MenuItem1" member="yes">
+				<label>Create</label>
+				<bitmap>Calico\events\create.png</bitmap>
+			</object>
+			<object class="wxMenuItem" name="ID_MENUITEM2" variable="MenuItem2" member="yes">
+				<label>Destroy</label>
+				<bitmap>Calico\events\destroy.png</bitmap>
+			</object>
+			<object class="wxMenuItem" name="ID_MENUITEM3" variable="MenuItem3" member="yes">
+				<label>Step</label>
+				<bitmap>Calico\events\step.png</bitmap>
+			</object>
+			<object class="wxMenuItem" name="ID_MENUITEM5" variable="MenuItem5" member="yes">
+				<label>Collision</label>
+				<bitmap>Calico\events\collision.png</bitmap>
+			</object>
+			<object class="wxMenuItem" name="ID_MENUITEM7" variable="MenuItem7" member="yes">
+				<label>Alarm</label>
+				<bitmap>Calico\events\alarm.png</bitmap>
+			</object>
+			<object class="wxMenuItem" name="ID_MENUITEM9" variable="MenuItem9" member="yes">
+				<label>Draw</label>
+				<bitmap>Calico\events\draw.png</bitmap>
+			</object>
+			<object class="wxMenuItem" name="ID_MENUITEM11" variable="MenuItem11" member="yes">
+				<label>Mouse</label>
+				<bitmap>Calico\events\mouse.png</bitmap>
+			</object>
+			<object class="wxMenuItem" name="ID_MENUITEM13" variable="MenuItem13" member="yes">
+				<label>Key Down</label>
+				<bitmap>Calico\events\keyboard.png</bitmap>
+			</object>
+			<object class="wxMenuItem" name="ID_MENUITEM15" variable="MenuItem15" member="yes">
+				<label>Key Pressed</label>
+				<bitmap>Calico\events\keypress.png</bitmap>
+			</object>
+			<object class="wxMenuItem" name="ID_MENUITEM17" variable="MenuItem17" member="yes">
+				<label>Key Up</label>
+				<bitmap>Calico\events\keyrelease.png</bitmap>
+			</object>
+		</object>
+	</object>
+</wxsmith>

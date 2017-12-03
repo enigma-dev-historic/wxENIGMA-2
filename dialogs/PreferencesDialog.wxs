@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wxsmith>
+	<object class="wxDialog" name="PreferencesDialog">
+		<title>Preferences</title>
+		<centered>1</centered>
+		<id_arg>0</id_arg>
+		<object class="wxBoxSizer" variable="BoxSizer1" member="no">
+			<orient>wxVERTICAL</orient>
+			<object class="sizeritem">
+				<object class="wxTreebook" name="ID_TREEBOOK1" variable="Treebook1" member="yes">
+					<size>800,600</size>
+					<object class="treebookpage">
+						<object class="wxPanel" name="ID_PANEL1" variable="Panel1" member="yes">
+							<object class="wxFlexGridSizer" variable="FlexGridSizer1" member="no">
+								<cols>3</cols>
+								<vgap>5</vgap>
+								<hgap>5</hgap>
+								<growablecols>1</growablecols>
+								<object class="sizeritem">
+									<object class="wxStaticText" name="ID_STATICTEXT5" variable="StaticText5" member="yes">
+										<label>Documentation URI</label>
+									</object>
+									<flag>wxALL|wxALIGN_RIGHT|wxALIGN_CENTER_VERTICAL</flag>
+								</object>
+								<object class="sizeritem">
+									<object class="wxTextCtrl" name="ID_TEXTCTRL5" variable="TextCtrl5" member="yes">
+										<value>http://enigma-dev.org/docs/Wiki/Main__Page</value>
+									</object>
+									<flag>wxALL|wxEXPAND</flag>
+									<option>1</option>
+								</object>
+								<object class="sizeritem">
+									<object class="wxBitmapButton" name="ID_BITMAPBUTTON5" variable="BitmapButton5" member="yes">
+										<bitmap>Calico\actions\open.png</bitmap>
+									</object>
+									<flag>wxALL</flag>
+								</object>
+								<object class="sizeritem">
+									<object class="wxStaticText" name="ID_STATICTEXT6" variable="StaticText6" member="yes">
+										<label>Website URI</label>
+									</object>
+									<flag>wxALL|wxALIGN_RIGHT|wxALIGN_CENTER_VERTICAL</flag>
+									<option>1</option>
+								</object>
+								<object class="sizeritem">
+									<object class="wxTextCtrl" name="ID_TEXTCTRL6" variable="TextCtrl6" member="yes">
+										<value>http://github.com/IsmAvatar/LateralGM</value>
+									</object>
+									<flag>wxALL|wxEXPAND</flag>
+									<option>1</option>
+								</object>
+								<object class="sizeritem">
+									<object class="wxBitmapButton" name="ID_BITMAPBUTTON6" variable="BitmapButton6" member="yes">
+										<bitmap>Calico\actions\open.png</bitmap>
+									</object>
+									<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+									<option>1</option>
+								</object>
+								<object class="sizeritem">
+									<object class="wxStaticText" name="ID_STATICTEXT7" variable="StaticText7" member="yes">
+										<label>Community URI</label>
+									</object>
+									<flag>wxALL|wxALIGN_RIGHT|wxALIGN_CENTER_VERTICAL</flag>
+									<option>1</option>
+								</object>
+								<object class="sizeritem">
+									<object class="wxTextCtrl" name="ID_TEXTCTRL7" variable="TextCtrl7" member="yes">
+										<value>http://enigma-dev.org/forums/</value>
+									</object>
+									<flag>wxALL|wxEXPAND</flag>
+									<option>1</option>
+								</object>
+								<object class="sizeritem">
+									<object class="wxBitmapButton" name="ID_BITMAPBUTTON7" variable="BitmapButton7" member="yes">
+										<bitmap>Calico\actions\open.png</bitmap>
+									</object>
+									<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+									<option>1</option>
+								</object>
+								<object class="sizeritem">
+									<object class="wxStaticText" name="ID_STATICTEXT8" variable="StaticText8" member="yes">
+										<label>Submit Issue URI</label>
+									</object>
+									<flag>wxALL|wxALIGN_RIGHT|wxALIGN_CENTER_VERTICAL</flag>
+									<option>1</option>
+								</object>
+								<object class="sizeritem">
+									<object class="wxTextCtrl" name="ID_TEXTCTRL8" variable="TextCtrl8" member="yes">
+										<value>http://github.com/IsmAvatar/LateralGM/issues</value>
+									</object>
+									<flag>wxALL|wxEXPAND</flag>
+									<option>1</option>
+								</object>
+								<object class="sizeritem">
+									<object class="wxBitmapButton" name="ID_BITMAPBUTTON8" variable="BitmapButton8" member="yes">
+										<bitmap>Calico\actions\open.png</bitmap>
+									</object>
+									<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+									<option>1</option>
+								</object>
+							</object>
+						</object>
+						<label>General</label>
+						<selected>1</selected>
+					</object>
+					<object class="treebookpage">
+						<object class="wxPanel" name="ID_PANEL2" variable="Panel2" member="yes" />
+						<label>Appearance</label>
+					</object>
+					<object class="treebookpage">
+						<object class="wxPanel" name="ID_PANEL3" variable="Panel3" member="yes" />
+						<label>External Editors</label>
+					</object>
+				</object>
+				<flag>wxALL|wxEXPAND</flag>
+				<border>5</border>
+				<option>1</option>
+			</object>
+			<object class="sizeritem">
+				<object class="wxStdDialogButtonSizer" variable="StdDialogButtonSizer1" member="no">
+					<object class="button">
+						<object class="wxButton" name="wxID_OK">
+							<label></label>
+						</object>
+					</object>
+					<object class="button">
+						<object class="wxButton" name="wxID_CANCEL">
+							<label></label>
+						</object>
+					</object>
+					<object class="button">
+						<object class="wxButton" name="wxID_APPLY">
+							<label></label>
+						</object>
+					</object>
+				</object>
+				<flag>wxBOTTOM|wxEXPAND</flag>
+				<border>5</border>
+			</object>
+		</object>
+	</object>
+</wxsmith>

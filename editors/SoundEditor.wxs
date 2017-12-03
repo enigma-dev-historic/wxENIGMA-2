@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wxsmith>
+	<object class="wxPanel" name="SoundEditor">
+		<id_arg>0</id_arg>
+		<object class="wxBoxSizer" variable="BoxSizer1" member="no">
+			<object class="sizeritem">
+				<object class="wxPanel" name="ID_PANEL1" variable="Panel1" member="yes">
+					<object class="wxGridBagSizer" variable="rootSizer" member="no">
+						<vgap>5</vgap>
+						<hgap>5</hgap>
+						<object class="sizeritem">
+							<object class="wxStaticText" name="wxID_ANY" variable="nameLabel" member="no">
+								<label>Name</label>
+							</object>
+							<col>0</col>
+							<row>0</row>
+							<flag>wxALL|wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL</flag>
+						</object>
+						<object class="sizeritem">
+							<object class="wxTextCtrl" name="ID_TEXTCTRL1" variable="nameTextCtrl" member="yes">
+								<value>snd__0</value>
+							</object>
+							<col>1</col>
+							<row>0</row>
+							<flag>wxALL|wxEXPAND</flag>
+							<option>1</option>
+						</object>
+						<object class="sizeritem">
+							<object class="wxBoxSizer" variable="propertiesSizer" member="no">
+								<object class="sizeritem">
+									<object class="wxBitmapButton" name="ID_BITMAPBUTTON3" variable="loadButton" member="yes">
+										<bitmap>Calico\actions\open.png</bitmap>
+									</object>
+									<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+									<option>1</option>
+								</object>
+								<object class="sizeritem">
+									<object class="wxBitmapButton" name="ID_BITMAPBUTTON1" variable="saveButton" member="yes">
+										<bitmap>Calico\actions\save.png</bitmap>
+									</object>
+									<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+									<option>1</option>
+								</object>
+								<object class="sizeritem">
+									<object class="wxBitmapButton" name="ID_BITMAPBUTTON2" variable="editButton" member="yes">
+										<bitmap>Calico\actions\edit.png</bitmap>
+									</object>
+									<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+								</object>
+								<object class="sizeritem">
+									<object class="wxBitmapButton" name="ID_BITMAPBUTTON4" variable="playButton" member="yes">
+										<bitmap>Calico\actions\sound-play.png</bitmap>
+									</object>
+									<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+								</object>
+								<object class="sizeritem">
+									<object class="wxCheckBox" name="ID_CHECKBOX1" variable="compressesdCheckBox" member="yes">
+										<label>Compressed</label>
+									</object>
+									<flag>wxLEFT|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+									<border>5</border>
+								</object>
+								<object class="sizeritem">
+									<object class="wxCheckBox" name="ID_CHECKBOX2" variable="streamedCheckBox" member="yes">
+										<label>Streamed</label>
+									</object>
+									<flag>wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+								</object>
+							</object>
+							<colspan>2</colspan>
+							<col>0</col>
+							<row>1</row>
+							<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+							<option>1</option>
+						</object>
+						<object class="sizeritem">
+							<object class="wxBoxSizer" variable="volumeSizer" member="no">
+								<object class="sizeritem">
+									<object class="wxStaticBitmap" name="wxID_ANY" variable="volumeBitmap" member="no">
+										<bitmap>C:\Users\Owner\Desktop\Projects\wxENIGMA\Calico\restree\sound.png</bitmap>
+										<style>0</style>
+									</object>
+									<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+								</object>
+								<object class="sizeritem">
+									<object class="wxSlider" name="ID_SLIDER1" variable="volumeSlider" member="yes" />
+									<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+									<option>1</option>
+								</object>
+								<object class="sizeritem">
+									<object class="wxSpinCtrl" name="ID_SPINCTRL1" variable="volumeSpinCtrl" member="yes">
+										<value>0</value>
+									</object>
+									<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+								</object>
+							</object>
+							<colspan>2</colspan>
+							<col>0</col>
+							<row>2</row>
+							<flag>wxALL|wxEXPAND</flag>
+							<option>1</option>
+						</object>
+						<object class="sizeritem">
+							<object class="wxBoxSizer" variable="playbackSizer" member="no">
+								<object class="sizeritem">
+									<object class="wxStaticBitmap" name="wxID_ANY" variable="playbackBitmap" member="no">
+										<bitmap>Calico\events\alarm.png</bitmap>
+										<style>0</style>
+									</object>
+									<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+								</object>
+								<object class="sizeritem">
+									<object class="wxSlider" name="ID_SLIDER2" variable="playbackSlider" member="yes" />
+									<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+									<option>1</option>
+								</object>
+								<object class="sizeritem">
+									<object class="wxStaticText" name="ID_STATICTEXT6" variable="playbackLabel" member="yes">
+										<label>0.13 / 0.74s</label>
+									</object>
+									<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+								</object>
+							</object>
+							<colspan>2</colspan>
+							<col>0</col>
+							<row>3</row>
+							<flag>wxALL|wxEXPAND</flag>
+							<option>1</option>
+						</object>
+						<object class="sizeritem">
+							<object class="wxFlexGridSizer" variable="targetSizer" member="no">
+								<cols>4</cols>
+								<rows>2</rows>
+								<vgap>5</vgap>
+								<hgap>5</hgap>
+								<object class="sizeritem">
+									<object class="wxStaticText" name="ID_STATICTEXT2" variable="outputLabel" member="yes">
+										<label>Output</label>
+									</object>
+									<flag>wxALL|wxALIGN_RIGHT|wxALIGN_CENTER_VERTICAL</flag>
+									<option>1</option>
+								</object>
+								<object class="sizeritem">
+									<object class="wxChoice" name="ID_CHOICE2" variable="outputChoice" member="yes">
+										<content>
+											<item>Mono</item>
+											<item>Stereo</item>
+											<item>3D</item>
+										</content>
+										<selection>0</selection>
+									</object>
+									<flag>wxALL|wxEXPAND</flag>
+									<option>1</option>
+								</object>
+								<object class="sizeritem">
+									<object class="wxStaticText" name="ID_STATICTEXT3" variable="sampleRateLabel" member="yes">
+										<label>Sample rate</label>
+									</object>
+									<flag>wxALL|wxALIGN_RIGHT|wxALIGN_CENTER_VERTICAL</flag>
+									<option>1</option>
+								</object>
+								<object class="sizeritem">
+									<object class="wxChoice" name="ID_CHOICE1" variable="sampleRateChoice" member="yes">
+										<content>
+											<item>11025</item>
+											<item>22050</item>
+											<item>32000</item>
+											<item>44100</item>
+											<item>48000</item>
+										</content>
+										<selection>3</selection>
+									</object>
+									<flag>wxALL|wxEXPAND</flag>
+									<option>1</option>
+								</object>
+								<object class="sizeritem">
+									<object class="wxStaticText" name="ID_STATICTEXT4" variable="qualityLabel" member="yes">
+										<label>Quality</label>
+									</object>
+									<flag>wxALL|wxALIGN_RIGHT|wxALIGN_CENTER_VERTICAL</flag>
+									<option>1</option>
+								</object>
+								<object class="sizeritem">
+									<object class="wxChoice" name="ID_CHOICE3" variable="qualityChoice" member="yes">
+										<content>
+											<item>8 bit</item>
+											<item>16 bit</item>
+										</content>
+										<selection>1</selection>
+									</object>
+									<flag>wxALL|wxEXPAND</flag>
+									<option>1</option>
+								</object>
+								<object class="sizeritem">
+									<object class="wxStaticText" name="ID_STATICTEXT5" variable="bitRateLabel" member="yes">
+										<label>Bit rate</label>
+									</object>
+									<flag>wxALL|wxALIGN_RIGHT|wxALIGN_CENTER_VERTICAL</flag>
+									<option>1</option>
+								</object>
+								<object class="sizeritem">
+									<object class="wxChoice" name="ID_CHOICE4" variable="bitRateChoice" member="yes">
+										<content>
+											<item>8</item>
+											<item>16</item>
+											<item>24</item>
+											<item>32</item>
+											<item>40</item>
+											<item>48</item>
+											<item>56</item>
+											<item>64</item>
+											<item>80</item>
+											<item>96</item>
+											<item>112</item>
+											<item>128</item>
+											<item>144</item>
+											<item>160</item>
+											<item>192</item>
+											<item>224</item>
+											<item>256</item>
+											<item>320</item>
+											<item>512</item>
+										</content>
+										<selection>11</selection>
+									</object>
+									<flag>wxALL|wxEXPAND</flag>
+									<option>1</option>
+								</object>
+							</object>
+							<colspan>2</colspan>
+							<col>0</col>
+							<row>4</row>
+							<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+							<option>1</option>
+						</object>
+					</object>
+				</object>
+				<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+				<border>5</border>
+				<option>1</option>
+			</object>
+		</object>
+	</object>
+</wxsmith>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="wxENIGMA" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/wxENIGMA" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="$(#wx)/lib/gcc_dll/mswu" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="$(#wx)/lib/gcc_dll/mswu" />
+				</ResourceCompiler>
+				<Linker>
+					<Add library="libwxmsw31u_aui.a" />
+					<Add library="libwxmsw31u_core.a" />
+					<Add library="libwxbase31u.a" />
+					<Add library="libwxpng.a" />
+					<Add library="libwxzlib.a" />
+					<Add directory="$(#wx)/lib/gcc_dll" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/wxENIGMA" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="$(#wx)/lib/gcc_dll/mswu" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="$(#wx)/lib/gcc_dll/mswu" />
+				</ResourceCompiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="libwxmsw31u_aui.a" />
+					<Add library="libwxmsw31u_core.a" />
+					<Add library="libwxbase31u.a" />
+					<Add library="libwxpng.a" />
+					<Add library="libwxzlib.a" />
+					<Add directory="$(#wx)/lib/gcc_dll" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-pipe" />
+			<Add option="-mthreads" />
+			<Add option="-D__GNUWIN32__" />
+			<Add option="-D__WXMSW__" />
+			<Add option="-DWXUSINGDLL" />
+			<Add option="-DwxUSE_UNICODE" />
+			<Add option="-Wall" />
+			<Add directory="$(#wx)/include" />
+		</Compiler>
+		<ResourceCompiler>
+			<Add directory="$(#wx)/include" />
+		</ResourceCompiler>
+		<Linker>
+			<Add option="-mthreads" />
+		</Linker>
+		<Unit filename="MainFrame.cpp" />
+		<Unit filename="MainFrame.h" />
+		<Unit filename="MainFrame.wxs" />
+		<Unit filename="dialogs/PreferencesDialog.cpp" />
+		<Unit filename="dialogs/PreferencesDialog.h" />
+		<Unit filename="dialogs/PreferencesDialog.wxs" />
+		<Unit filename="editors/FontEditor.cpp" />
+		<Unit filename="editors/FontEditor.h" />
+		<Unit filename="editors/FontEditor.wxs" />
+		<Unit filename="editors/ObjectEditor.cpp" />
+		<Unit filename="editors/ObjectEditor.h" />
+		<Unit filename="editors/ObjectEditor.wxs" />
+		<Unit filename="editors/PathEditor.cpp" />
+		<Unit filename="editors/PathEditor.h" />
+		<Unit filename="editors/PathEditor.wxs" />
+		<Unit filename="editors/SoundEditor.cpp" />
+		<Unit filename="editors/SoundEditor.h" />
+		<Unit filename="editors/SoundEditor.wxs" />
+		<Unit filename="resource.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
+		<Unit filename="wxENIGMAApp.cpp" />
+		<Unit filename="wxENIGMAApp.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<wxsmith version="1">
+				<gui name="wxWidgets" src="wxENIGMAApp.cpp" main="MainFrame" init_handlers="necessary" language="CPP" />
+				<resources>
+					<wxFrame wxs="MainFrame.wxs" src="MainFrame.cpp" hdr="MainFrame.h" fwddecl="0" i18n="1" name="MainFrame" language="CPP" />
+					<wxDialog wxs="dialogs/PreferencesDialog.wxs" src="dialogs/PreferencesDialog.cpp" hdr="dialogs/PreferencesDialog.h" fwddecl="0" i18n="1" name="PreferencesDialog" language="CPP" />
+					<wxPanel wxs="editors/ObjectEditor.wxs" src="editors/ObjectEditor.cpp" hdr="editors/ObjectEditor.h" fwddecl="0" i18n="1" name="ObjectEditor" language="CPP" />
+					<wxPanel wxs="editors/FontEditor.wxs" src="editors/FontEditor.cpp" hdr="editors/FontEditor.h" fwddecl="0" i18n="1" name="FontEditor" language="CPP" />
+					<wxPanel wxs="editors/PathEditor.wxs" src="editors/PathEditor.cpp" hdr="editors/PathEditor.h" fwddecl="0" i18n="1" name="PathEditor" language="CPP" />
+					<wxPanel wxs="editors/SoundEditor.wxs" src="editors/SoundEditor.cpp" hdr="editors/SoundEditor.h" fwddecl="0" i18n="1" name="SoundEditor" language="CPP" />
+				</resources>
+			</wxsmith>
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wxsmith>
+	<object class="wxFrame" name="MainFrame">
+		<title>ENIGMA</title>
+		<centered>1</centered>
+		<icon code="wxICON(aaaa)" />
+		<size>1200,800</size>
+		<id_arg>0</id_arg>
+		<style>wxDEFAULT_FRAME_STYLE|wxVSCROLL|wxHSCROLL</style>
+		<object class="wxAuiManager" variable="mainAuiManager" member="yes">
+			<object class="AuiManagerItem">
+				<object class="wxAuiNotebook" name="ID_AUINOTEBOOK1" variable="workspaceAuiNotebook" member="yes">
+					<size>311,581</size>
+					<object class="AuiNotebookPage">
+						<object class="wxPanel" name="ID_PANEL1" variable="projectTreePanel" member="yes">
+							<object class="wxBoxSizer" variable="projectTreeSizer" member="no">
+								<orient>wxVERTICAL</orient>
+								<object class="sizeritem">
+									<object class="wxBoxSizer" variable="projectSearchSizer" member="no">
+										<object class="sizeritem">
+											<object class="wxSearchCtrl" name="ID_SEARCHCTRL1" variable="projectSearchCtrl" member="yes" />
+											<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+											<option>1</option>
+										</object>
+									</object>
+									<flag>wxALL|wxEXPAND</flag>
+									<border>5</border>
+								</object>
+								<object class="sizeritem">
+									<object class="wxTreeCtrl" name="ID_TREECTRL1" variable="projectTreeCtrl" member="yes">
+										<image_list>&lt;none&gt;</image_list>
+										<tree_items>
+											<item>projectTreeCtrl</item>
+											<item>&lt;none&gt;</item>
+											<item>0,#000000,0,-1,-1,-1,-1,root</item>
+											<item>1,#000000,0,-1,-1,-1,-1,Sprites</item>
+											<item>1,#000000,0,-1,-1,-1,-1,Sounds</item>
+											<item>1,#000000,0,-1,-1,-1,-1,Backgrounds</item>
+											<item>1,#000000,0,-1,-1,-1,-1,Paths</item>
+											<item>1,#000000,0,-1,-1,-1,-1,Scripts</item>
+											<item>1,#000000,0,-1,-1,-1,-1,Shaders</item>
+											<item>1,#000000,0,-1,-1,-1,-1,Fonts</item>
+											<item>1,#000000,0,-1,-1,-1,-1,Timelines</item>
+											<item>1,#000000,0,-1,-1,-1,-1,Objects</item>
+											<item>1,#000000,0,-1,-1,-1,-1,Rooms</item>
+										</tree_items>
+										<items_text>
+											<item2>projectTreeCtrl</item2>
+											<item2>&lt;none&gt;</item2>
+											<item2>0,#000000,0,-1,-1,-1,-1,root</item2>
+											<item2>1,#000000,0,-1,-1,-1,-1,Sprites</item2>
+											<item2>1,#000000,0,-1,-1,-1,-1,Sounds</item2>
+											<item2>1,#000000,0,-1,-1,-1,-1,Backgrounds</item2>
+											<item2>1,#000000,0,-1,-1,-1,-1,Paths</item2>
+											<item2>1,#000000,0,-1,-1,-1,-1,Scripts</item2>
+											<item2>1,#000000,0,-1,-1,-1,-1,Shaders</item2>
+											<item2>1,#000000,0,-1,-1,-1,-1,Fonts</item2>
+											<item2>1,#000000,0,-1,-1,-1,-1,Timelines</item2>
+											<item2>1,#000000,0,-1,-1,-1,-1,Objects</item2>
+											<item2>1,#000000,0,-1,-1,-1,-1,Rooms</item2>
+										</items_text>
+										<style>wxTR_HIDE_ROOT|wxTR_DEFAULT_STYLE</style>
+									</object>
+									<flag>wxALL|wxEXPAND</flag>
+									<border>5</border>
+									<option>1</option>
+								</object>
+							</object>
+						</object>
+						<label>Project</label>
+					</object>
+					<object class="AuiNotebookPage">
+						<object class="wxPanel" name="ID_PANEL3" variable="searchPanel" member="yes" />
+						<label>Search</label>
+					</object>
+				</object>
+				<name>workspacePane</name>
+				<caption>Workspace</caption>
+				<minimizebutton>0</minimizebutton>
+				<maximizebutton>0</maximizebutton>
+				<pinbutton>0</pinbutton>
+				<dockdirection>Left</dockdirection>
+				<dockfixed>0</dockfixed>
+				<dockabledirection></dockabledirection>
+				<firstadd>0</firstadd>
+			</object>
+		</object>
+		<object class="wxMenuBar" variable="mainMenuBar" member="no">
+			<object class="wxMenu" variable="fileMenu" member="no">
+				<label>&amp;File</label>
+				<object class="wxMenuItem" name="ID_MENUITEM1" variable="newMenuItem" member="yes">
+					<label>&amp;New</label>
+					<accel>Ctrl+N</accel>
+					<bitmap>Calico\actions\new.png</bitmap>
+				</object>
+				<object class="wxMenuItem" name="ID_MENUITEM2" variable="openMenuItem" member="yes">
+					<label>&amp;Open</label>
+					<accel>Ctrl+O</accel>
+					<bitmap>Calico\actions\open.png</bitmap>
+				</object>
+				<object class="separator" />
+				<object class="wxMenuItem" name="ID_MENUITEM3" variable="saveMenuItem" member="yes">
+					<label>&amp;Save</label>
+					<accel>Ctrl+S</accel>
+					<bitmap>Calico\actions\save.png</bitmap>
+				</object>
+				<object class="wxMenuItem" name="ID_MENUITEM4" variable="saveAllMenuItem" member="yes">
+					<label>Save &amp;All</label>
+					<bitmap>Calico\actions\save-all.png</bitmap>
+				</object>
+				<object class="separator" />
+				<object class="wxMenuItem" name="ID_MENUITEM5" variable="preferencesMenuItem" member="yes">
+					<label>&amp;Preferences</label>
+					<accel>Ctrl+Shift+P</accel>
+					<bitmap>Calico\actions\preferences.png</bitmap>
+					<handler function="OnShowPreferences" entry="EVT_MENU" />
+				</object>
+				<object class="separator" />
+				<object class="wxMenuItem" name="idMenuExit" variable="exitMenuItem" member="no">
+					<label>E&amp;xit</label>
+					<accel>Alt+F4</accel>
+					<help>Quit the application</help>
+					<bitmap>Calico\actions\cancel.png</bitmap>
+					<handler function="OnQuit" entry="EVT_MENU" />
+				</object>
+			</object>
+			<object class="wxMenu" variable="buildMenu" member="yes">
+				<label>&amp;Build</label>
+				<object class="wxMenuItem" name="ID_MENUITEM6" variable="runMenuItem" member="yes">
+					<label>&amp;Run</label>
+					<accel>F5</accel>
+					<bitmap>Calico/actions/run.png</bitmap>
+				</object>
+				<object class="wxMenuItem" name="ID_MENUITEM7" variable="debugMenuItem" member="yes">
+					<label>&amp;Debug</label>
+					<accel>F6</accel>
+					<bitmap>Calico/actions/debug.png</bitmap>
+				</object>
+				<object class="wxMenuItem" name="ID_MENUITEM8" variable="createExecutableMenuItem" member="yes">
+					<label>Create &amp;Executable</label>
+					<accel>F8</accel>
+					<bitmap>Calico/actions/compile.png</bitmap>
+				</object>
+			</object>
+			<object class="wxMenu" variable="editMenu" member="yes">
+				<label>&amp;Edit</label>
+			</object>
+			<object class="wxMenu" variable="resourcesMenu" member="yes">
+				<label>&amp;Resources</label>
+			</object>
+			<object class="wxMenu" variable="helpMenu" member="no">
+				<label>&amp;Help</label>
+				<object class="wxMenuItem" name="ID_MENUITEM9" variable="documentationMenuItem" member="yes">
+					<label>&amp;Documentation</label>
+					<accel>F1</accel>
+					<bitmap>Calico\actions\manual.png</bitmap>
+					<handler function="OnShowDocumentation" entry="EVT_MENU" />
+				</object>
+				<object class="separator" />
+				<object class="wxMenuItem" name="ID_MENUITEM10" variable="websiteMenuItem" member="yes">
+					<label>&amp;Website</label>
+					<bitmap>Calico\actions\world.png</bitmap>
+					<handler function="OnShowWebsite" entry="EVT_MENU" />
+				</object>
+				<object class="wxMenuItem" name="ID_MENUITEM11" variable="communityMenuItem" member="yes">
+					<label>&amp;Community</label>
+					<bitmap>Calico\actions\people.png</bitmap>
+					<handler function="OnShowCommunity" entry="EVT_MENU" />
+				</object>
+				<object class="wxMenuItem" name="ID_MENUITEM12" variable="submitIssueMenuItem" member="yes">
+					<label>Submit &amp;Issue</label>
+					<bitmap>Calico\actions\tag.png</bitmap>
+					<handler function="OnSubmitIssue" entry="EVT_MENU" />
+				</object>
+				<object class="separator" />
+				<object class="wxMenuItem" name="ID_MENUITEM13" variable="exploreENIGMAMenuItem" member="yes">
+					<label>Explore &amp;ENIGMA</label>
+					<accel>Ctrl+Alt+O</accel>
+					<handler function="OnExploreENIGMA" entry="EVT_MENU" />
+				</object>
+				<object class="wxMenuItem" name="ID_MENUITEM14" variable="exploreProjectMenuItem" member="yes">
+					<label>Explore &amp;Project</label>
+					<accel>Ctrl+Alt+P</accel>
+					<handler function="OnExploreProject" entry="EVT_MENU" />
+				</object>
+				<object class="separator" />
+				<object class="wxMenuItem" name="idMenuAbout" variable="aboutMenuItem" member="no">
+					<label>&amp;About</label>
+					<accel>F1</accel>
+					<help>Show info about this application</help>
+					<bitmap>Calico\actions\help.png</bitmap>
+					<handler function="OnAbout" entry="EVT_MENU" />
+				</object>
+			</object>
+		</object>
+		<object class="wxStatusBar" name="ID_STATUSBAR1" variable="mainStatusBar" member="yes">
+			<fields>1</fields>
+			<widths>-1</widths>
+			<styles>wxSB_FLAT</styles>
+		</object>
+		<object class="wxToolBar" name="ID_TOOLBAR1" variable="mainToolBar" member="yes">
+			<bitmapsize>24,24</bitmapsize>
+			<style>wxTB_FLAT|wxTB_HORIZONTAL|wxNO_BORDER</style>
+			<object class="tool" name="ID_TOOLBARITEM1" variable="ToolBarItem1" member="yes">
+				<label>New</label>
+				<bitmap>Calico/actions/new.png</bitmap>
+			</object>
+			<object class="tool" name="ID_TOOLBARITEM2" variable="ToolBarItem2" member="yes">
+				<label>Open</label>
+				<bitmap>Calico\actions\open.png</bitmap>
+			</object>
+			<object class="tool" name="ID_TOOLBARITEM3" variable="ToolBarItem3" member="yes">
+				<label>Save</label>
+				<bitmap>Calico\actions\save.png</bitmap>
+			</object>
+			<object class="tool" name="ID_TOOLBARITEM4" variable="ToolBarItem4" member="yes">
+				<label>Save All</label>
+				<bitmap>Calico\actions\save-all.png</bitmap>
+			</object>
+			<object class="separator" />
+			<object class="tool" name="ID_TOOLBARITEM5" variable="ToolBarItem5" member="yes">
+				<label>Add Sprite</label>
+				<bitmap>Calico\restree\sprite.png</bitmap>
+			</object>
+			<object class="tool" name="ID_TOOLBARITEM6" variable="ToolBarItem6" member="yes">
+				<label>Add Sound</label>
+				<bitmap>Calico\restree\sound.png</bitmap>
+			</object>
+			<object class="tool" name="ID_TOOLBARITEM7" variable="ToolBarItem7" member="yes">
+				<label>Add Background</label>
+				<bitmap>Calico\restree\background.png</bitmap>
+			</object>
+			<object class="tool" name="ID_TOOLBARITEM8" variable="ToolBarItem8" member="yes">
+				<label>Add Path</label>
+				<bitmap>Calico\restree\path.png</bitmap>
+			</object>
+			<object class="tool" name="ID_TOOLBARITEM9" variable="ToolBarItem9" member="yes">
+				<label>Add Script</label>
+				<bitmap>Calico\restree\script.png</bitmap>
+			</object>
+			<object class="tool" name="ID_TOOLBARITEM10" variable="ToolBarItem10" member="yes">
+				<label>Add Shader</label>
+				<bitmap>Calico\restree\shader.png</bitmap>
+			</object>
+			<object class="tool" name="ID_TOOLBARITEM11" variable="ToolBarItem11" member="yes">
+				<label>Add Font</label>
+				<bitmap>Calico\restree\font.png</bitmap>
+			</object>
+			<object class="tool" name="ID_TOOLBARITEM12" variable="ToolBarItem12" member="yes">
+				<label>Add Timeline</label>
+				<bitmap>Calico\restree\timeline.png</bitmap>
+			</object>
+			<object class="tool" name="ID_TOOLBARITEM13" variable="ToolBarItem13" member="yes">
+				<label>Add Object</label>
+				<bitmap>Calico\restree\object.png</bitmap>
+				<handler function="OnToolBarItem13Clicked" entry="EVT_TOOL" />
+			</object>
+			<object class="tool" name="ID_TOOLBARITEM14" variable="ToolBarItem14" member="yes">
+				<label>Add Room</label>
+				<bitmap>Calico\restree\room.png</bitmap>
+			</object>
+		</object>
+	</object>
+</wxsmith>
