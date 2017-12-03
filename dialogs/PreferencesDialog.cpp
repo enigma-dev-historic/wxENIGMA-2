@@ -53,7 +53,7 @@ PreferencesDialog::PreferencesDialog(wxWindow* parent,wxWindowID id,const wxPoin
 	FlexGridSizer1->Add(BitmapButton5, 0, wxALL, 0);
 	StaticText6 = new wxStaticText(Panel1, ID_STATICTEXT6, _("Website URI"), wxDefaultPosition, wxDefaultSize, 0, _T("ID_STATICTEXT6"));
 	FlexGridSizer1->Add(StaticText6, 1, wxALL|wxALIGN_RIGHT|wxALIGN_CENTER_VERTICAL, 0);
-	TextCtrl6 = new wxTextCtrl(Panel1, ID_TEXTCTRL6, _("http://github.com/IsmAvatar/LateralGM"), wxDefaultPosition, wxDefaultSize, 0, wxDefaultValidator, _T("ID_TEXTCTRL6"));
+	TextCtrl6 = new wxTextCtrl(Panel1, ID_TEXTCTRL6, _("http://enigma-dev.org"), wxDefaultPosition, wxDefaultSize, 0, wxDefaultValidator, _T("ID_TEXTCTRL6"));
 	FlexGridSizer1->Add(TextCtrl6, 1, wxALL|wxEXPAND, 0);
 	BitmapButton6 = new wxBitmapButton(Panel1, ID_BITMAPBUTTON6, wxBitmap(wxImage(_T("Calico\\actions\\open.png"))), wxDefaultPosition, wxDefaultSize, wxBU_AUTODRAW, wxDefaultValidator, _T("ID_BITMAPBUTTON6"));
 	FlexGridSizer1->Add(BitmapButton6, 1, wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 0);
@@ -65,7 +65,7 @@ PreferencesDialog::PreferencesDialog(wxWindow* parent,wxWindowID id,const wxPoin
 	FlexGridSizer1->Add(BitmapButton7, 1, wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 0);
 	StaticText8 = new wxStaticText(Panel1, ID_STATICTEXT8, _("Submit Issue URI"), wxDefaultPosition, wxDefaultSize, 0, _T("ID_STATICTEXT8"));
 	FlexGridSizer1->Add(StaticText8, 1, wxALL|wxALIGN_RIGHT|wxALIGN_CENTER_VERTICAL, 0);
-	TextCtrl8 = new wxTextCtrl(Panel1, ID_TEXTCTRL8, _("http://github.com/IsmAvatar/LateralGM/issues"), wxDefaultPosition, wxDefaultSize, 0, wxDefaultValidator, _T("ID_TEXTCTRL8"));
+	TextCtrl8 = new wxTextCtrl(Panel1, ID_TEXTCTRL8, _("http://github.com/enigma-dev/wxENIGMA/issues"), wxDefaultPosition, wxDefaultSize, 0, wxDefaultValidator, _T("ID_TEXTCTRL8"));
 	FlexGridSizer1->Add(TextCtrl8, 1, wxALL|wxEXPAND, 0);
 	BitmapButton8 = new wxBitmapButton(Panel1, ID_BITMAPBUTTON8, wxBitmap(wxImage(_T("Calico\\actions\\open.png"))), wxDefaultPosition, wxDefaultSize, wxBU_AUTODRAW, wxDefaultValidator, _T("ID_BITMAPBUTTON8"));
 	FlexGridSizer1->Add(BitmapButton8, 1, wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 0);

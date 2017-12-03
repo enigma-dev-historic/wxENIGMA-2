@@ -44,7 +44,7 @@
 								</object>
 								<object class="sizeritem">
 									<object class="wxTextCtrl" name="ID_TEXTCTRL6" variable="TextCtrl6" member="yes">
-										<value>http://github.com/IsmAvatar/LateralGM</value>
+										<value>http://enigma-dev.org</value>
 									</object>
 									<flag>wxALL|wxEXPAND</flag>
 									<option>1</option>
@@ -86,7 +86,7 @@
 								</object>
 								<object class="sizeritem">
 									<object class="wxTextCtrl" name="ID_TEXTCTRL8" variable="TextCtrl8" member="yes">
-										<value>http://github.com/IsmAvatar/LateralGM/issues</value>
+										<value>http://github.com/enigma-dev/wxENIGMA/issues</value>
 									</object>
 									<flag>wxALL|wxEXPAND</flag>
 									<option>1</option>
